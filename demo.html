@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies monster demo</title>
+    <style>
+
+        .cookies-info {
+            background-color: blanchedalmond;
+            padding: 1rem;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<script type="text/x-template" id="cookiesTpl">
+
+    <div class="cookies-info">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur obcaecati quas quidem tempora vitae!
+        Assumenda beatae consectetur excepturi fuga labore laudantium minus molestiae nihil quam quos rem repudiandae, sapiente ullam.
+        <button data-close-trigger>Accept</button>
+    </div>
+
+</script>
+<script src="dist/cookies-monster.js"></script>
+<script>
+
+    CookiesMonster.init({
+        templateSelector: '#cookiesTpl',
+        lsKey: 'foo'
+    });
+
+
+</script>
+</body>
+</html>
